@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>SignIn Move In Second</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="signin.css" rel="stylesheet" type="text/css" />
+    <style>
+      #loader{
+        margin-left:auto;
+        margin-right:auto;
+        display: block;
+        margin-top:5%;
+      }
+    </style>
+  </head>
+  <body>  
+    <nav class = "topbar">
+      <p id = "s1">Wa Automate</p>
+    </nav>      
+    <div id = "error">
+        <p id = "p"></p>
+    </div>
+      <div id = "div3">
+      				<p id = "p2">Sign In</p>
+              <label for = "emailq" id = "l5">Your Email</label>
+      <input type = "email" required id = "emailq" autocomplete="off"/><br>
+      <label for = "pass" id = "l6">Your Password</label>
+
+      <div id = "singleline"><input autocomplete="new-password" type = "password" required  id = "pass"  >
+      <i onclick = "passshow()" class="material-icons" id = "eyee">
+        visibility_off
+      </i></div><br>
+      <p style = "cursor:pointer" onclick = "forgot()" id = "p5">Forgot Password?</p><div hidden class="lds-ring" id = "loader2"><div></div><div></div><div></div><div></div></div>
+      <button style = "cursor:pointer;" class = "bbn" id = "button1" onclick = "signin()">Sign In</button>
+      <div hidden class="lds-ring" id = "loader"><div></div><div></div><div></div><div></div></div>
+
+      <p id = "p4">Not a member? <a style = "text-decoration:none" href = "signup"><span style = "text-decoration:none"id = "span">SignUp</span></a></p>
+      <a style = "text-decoration: none" href = ""><p id = "p5">LogIn with Others</p></a>
+      <img id = "gogl" src = "google.png" alt = "Login With Google">     
+      </div>
+      
+      
+
+      <p id = "d16">© 2023 Wa Automate. All Rights Reserved</p>
+      <script src= "cryptohash.js"></script>
+      <script src="https://accounts.google.com/gsi/client" async defer></script>
+      <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+      <script src="signin.js"></script>
+</body>
+</html>
